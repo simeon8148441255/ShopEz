@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    {
+      "name": "@svgr/plugin-svgo",
+      "params": {
+        "svgoConfig": {
+          "plugins": [
+            {
+              "name": "preset-default",
+              "params": {
+                "overrides": [
+                  {
+                    "name": "removeViewBox",
+                    "active": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
